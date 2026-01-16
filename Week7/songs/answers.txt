@@ -1,0 +1,11 @@
+            AVG(energy)     AVG(valence)    AVG(danceability)
+hyped       > 0.5           > 0.5           > 0.5
+happy       > 0.5           > 0.5           < 0.5
+catharsis   > 0.5           < 0.5           > 0.5
+angry       > 0.5           < 0.5           < 0.5
+chill       < 0.5           > 0.5           > 0.5
+peace       < 0.5           > 0.5           < 0.5
+nostalgia   < 0.5           < 0.5           > 0.5
+sad         < 0.5           < 0.5           < 0.5
+
+Hypothesize: This way of calculating aura might not be very representative because there are many more indicators of someone's mood that are not included here.

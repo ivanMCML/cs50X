@@ -1,0 +1,124 @@
+body {
+    text-align: center;
+    background-color: black;
+    height: 100vh;
+    font-size: 100%;
+}
+
+header {
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header_button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 18px;
+}
+
+.header_link:hover {
+    background-color: #272730;
+}
+
+h3{
+    margin: 0px;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.dropdown_menu {
+    display:none;
+    position: absolute;
+    background-color: #171720;
+}
+
+.dropdown_content {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown_sheet:hover {
+    width: 100%;
+    background-color: #272730;
+}
+
+.dropdown_content:hover {
+    background-color: #272730;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown:hover .dropdown_menu {
+    display: block;
+}
+
+.red {
+    height: 4px;
+    background-color: rgb(205, 0, 0);
+    margin: 0px;
+}
+
+.blue {
+    height: 4px;
+    background-color: rgb(0, 0, 205);
+    margin: 0px;
+}
+
+main {
+    background-image: url("metkovic_02.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 70%;
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    main {
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+.button_main {
+    font-family: "Monaco", "Arial";
+    font-size: 1.2em;
+    margin: 40px;
+    height: 3em;
+    width: 180px;
+    min-width: 180px;
+    border: none;
+}
+
+.button_main:hover {
+    background-color: #999999;
+    color: white;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    color: gray;
+    padding: 2em;
+    font-size: 1em;
+}
+
+hr {
+    height: 4px;
+    color: white;
+    background-color: white;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // Check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Wait for correct answer
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                });
+
+                // Wait for incorrect answer
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function() {
+                        incorrects[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect!';
+                    });
+                }
+
+                // Second question
+                document.querySelector('#check').addEventListener('click', function() {
+                    let answer = document.querySelector('#answer');
+                    if (answer.value.toLowerCase() == 'no') {
+                        answer.style.backgroundColor = 'green';
+                        document.querySelector('#feedback2').innerHTML = 'Correct!';
+                    } else {
+                        answer.style.backgroundColor = 'red';
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect!';
+                    }
+
+                });
+
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- First question -->
+                <h3>What is the greatest Croatian football club?</h3>
+                <button class="incorrect">Zagreb</button>
+                <button class="correct">Hajduk</button>
+                <button class="incorrect">Dinamo</button>
+                <button class="incorrect">Rijeka</button>
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- Second question -->
+                <h3>Was the previous question difficult?</h3>
+                <input id="answer">
+                <button id='check'>Check Answer</button>
+                <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,24 @@
+.education_main {
+    background-image: none;
+    background-color: rgb(64, 70, 75);
+    color: white;
+    text-shadow: black 2px 2px 0px;
+    padding: 10%;
+    padding-top: 5%;
+    text-align: left;
+
+}
+
+.education_main p {
+    margin-bottom: 4em;
+}
+
+.education_main a {
+    color: white;
+    text-decoration: underline;
+}
+
+.education_main a:hover {
+    cursor: pointer;
+    color: #aaaaaa;
+}

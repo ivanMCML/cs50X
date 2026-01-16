@@ -1,0 +1,26 @@
+sort1 uses: Bubble sort
+
+reversed5000.txt -> 0.056s
+random5000.txt -> 0.055s
+sorted5000.txt -> 0.012s
+
+How do you know?: on the reversed5000.txt and random5000.txt, sort1 took 0.055s; on the sorted5000.txt it took just 0.012s.
+Bubble sort preforms better on sorted lists.
+
+sort2 uses: Merge sort
+
+reversed5000.txt -> 0.012s
+random5000.txt -> 0.011s
+sorted5000.txt -> 0.014s
+
+How do you know?: on all the lists of 5000 elements, sort2 took about 0.012s
+Merge sort is the fastest of the mentioned.
+
+sort3 uses: selection sort
+
+reversed5000.txt -> 0.037s
+random5000.txt -> 0.046s
+sorted5000.txt -> 0.036s
+
+How do you know?: on all the lists of 5000 elements, sort3 took about 0.04s
+Selection sort is slower than merge sort, but unlike bubble sort, it preforms same with all lists.

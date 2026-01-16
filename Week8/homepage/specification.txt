@@ -1,0 +1,3 @@
+HTML: div, p, h3, h4, hr, a, button, header, main, footer
+CSS: text-align, background-color, height, color, font-size
+I used JavaScript to change the background image when clicking on underlined words. I used Bootstrap for the icons in the page header.
